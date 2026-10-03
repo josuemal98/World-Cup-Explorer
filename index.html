@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup History Explorer</title>
+  <meta name="description" content="Pick a FIFA World Cup year and see who won, the final score, and facts about the champion country." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>World Cup History Explorer</h1>
+    <p class="tagline">Pick a year. See who won. Learn about the champion.</p>
+  </header>
+
+  <main>
+    <!-- Week 5 skeleton: static markup only. The year dropdown, search,
+         and result cards below will be filled dynamically from the
+         TheSportsDB / REST Countries APIs starting Week 6. -->
+
+    <section class="controls" aria-label="Search controls">
+      <div class="control">
+        <label for="year-select">World Cup year</label>
+        <select id="year-select" name="year-select">
+          <option value="2022">2022</option>
+          <option value="2018">2018</option>
+          <option value="2014">2014</option>
+        </select>
+      </div>
+
+      <form id="search-form" class="control">
+        <label for="search-input">Search by country</label>
+        <div class="search-row">
+          <input type="text" id="search-input" name="search-input" placeholder="e.g. Brazil" autocomplete="off" />
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Placeholder tournament card, static example data for now -->
+    <section id="tournament-section" class="tournament-section">
+      <article class="tournament-card">
+        <h2>2022 FIFA World Cup</h2>
+        <p class="tournament-card__result">Argentina 3 – 3 France (pen. 4–2)</p>
+        <p class="tournament-card__champion">
+          <span class="label">Champion: </span>Argentina
+        </p>
+        <p class="tournament-card__meta">Runner-up: France</p>
+        <p class="tournament-card__meta">Host: Lusail Stadium, Qatar</p>
+        <p class="tournament-card__meta">Date: 2022-12-18</p>
+      </article>
+    </section>
+
+    <p class="fun-fact">Fun fact: 6 goals were scored in this final.</p>
+
+    <p class="page-nav">
+      <a href="./detail.html">See the champion's country details &rarr;</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Match data from <a href="https://www.thesportsdb.com" target="_blank" rel="noopener">TheSportsDB</a>.
+      Country data from <a href="https://restcountries.com" target="_blank" rel="noopener">REST Countries</a>.
+      BYU-Idaho - Josue Daniel Maldonado
+    </p>
+  </footer>
+</body>
+</html>

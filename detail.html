@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup History Explorer — Country Detail</title>
+  <meta name="description" content="Details about a FIFA World Cup champion country." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>World Cup History Explorer</h1>
+    <p class="tagline">Champion country details</p>
+  </header>
+
+  <main>
+    <!-- Week 5 skeleton: static markup only. This card will be built
+         dynamically from REST Countries data starting Week 6, and the
+         flip animation (front/back) will be triggered by JS once the
+         "is-flipped" class is added in CountryCard.js. Showing the
+         back face here for now so both faces are visible in the
+         skeleton review. -->
+
+    <p class="page-nav">
+      <a href="./index.html">&larr; Back</a>
+    </p>
+
+    <section id="country-section" class="country-section">
+      <div class="country-card is-flipped">
+        <div class="country-card__inner">
+          <div class="country-card__face country-card__front">
+            <img class="country-card__flag" src="https://flagcdn.com/w320/ar.png" alt="Flag of Argentina" />
+            <h3>Argentina</h3>
+          </div>
+          <div class="country-card__face country-card__back">
+            <h3>Argentina</h3>
+            <ul class="country-card__stats">
+              <li><span class="label">Capital: </span>Buenos Aires</li>
+              <li><span class="label">Region: </span>Americas</li>
+              <li><span class="label">Population: </span>45,376,763</li>
+              <li><span class="label">Languages: </span>Spanish, Guaraní</li>
+              <li><span class="label">Currency: </span>Argentine peso</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Match data from <a href="https://www.thesportsdb.com" target="_blank" rel="noopener">TheSportsDB</a>.
+      Country data from <a href="https://restcountries.com" target="_blank" rel="noopener">REST Countries</a>.
+    </p>
+  </footer>
+</body>
+</html>
